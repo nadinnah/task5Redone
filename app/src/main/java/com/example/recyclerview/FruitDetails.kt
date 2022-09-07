@@ -15,7 +15,9 @@ class FruitDetails : AppCompatActivity() {
         if (fruits !=null){
             val textView:TextView= findViewById(R.id.detailedTextView)
             val imageView:ImageView= findViewById(R.id.detailedImageView)
+            val textView2:TextView= findViewById(R.id.detailedTextView2)
 
+            textView2.text= fruits.fruitsBenefits
             textView.text= fruits.fruitsName
             imageView.setImageResource(fruits.fruitsImage)
         }
