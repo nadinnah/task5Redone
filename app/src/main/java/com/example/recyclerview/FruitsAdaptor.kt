@@ -32,17 +32,17 @@ class FruitAdapter(private val fruitsList: List<Fruits>): RecyclerView.Adapter<F
 
         private val fruitName: TextView
         private val fruitImage: ImageView
-        private val fruitBenefits: TextView
+
 
         init {
             fruitName= itemView.findViewById(R.id.fruitName)
             fruitImage= itemView.findViewById(R.id.fruitImage)
-            fruitBenefits= itemView.findViewById(R.id.detailedTextView2)
+
         }
 
         fun bindFruits(fruits: Fruits){
             fruitName.text= fruits.fruitsName
-            fruitBenefits.text= fruits.fruitsBenefits
+
             fruitImage.setImageResource(fruits.fruitsImage)
         }
 
